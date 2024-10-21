@@ -9,12 +9,12 @@ import Logo from "./Asset/TechTonic Logo.png"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter> */}
     <head>
       <link rel='icon' href={Logo}/>
     </head>
     <App />
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
   </React.StrictMode>
 );
 

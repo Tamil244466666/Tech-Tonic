@@ -14,7 +14,7 @@ function App() {
     <>
     <Navbar/>
     <br/>
-    {/* <Router> */}
+    <Router>
     <Routes>
       <Route path='/register' element={<Register_login/>}/>
       <Route path='/login' element={<Login/>}/>
@@ -22,7 +22,7 @@ function App() {
       <Route path='/Saved' element={<Saved/>}/>
       <Route path='/AboutUs' element={<Aboutus/>}/>
     </Routes>
-    {/* </Router> */}
+    </Router>
  
     </>
   );
