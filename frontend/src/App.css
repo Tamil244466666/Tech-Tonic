@@ -1,0 +1,808 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color:var(--secondary-color);
+}
+
+:root {
+  --primary-color: #FF204E;
+  --secondary-color: #00193a;
+  --third-color:#A0153E;
+  --fourth-color:#5D0E41;
+  --text-color:white;
+  }
+
+
+  .Navbar{
+   
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr 1fr 2fr;
+      background-color: var(--primary-color);
+      /* background: linear-gradient(0deg, rgba(0,25,58,1) 0%, rgba(255,32,78,1) 80%); */
+      box-shadow: -2px 10px 10px var(--secondary-color);
+      align-items: center;
+  }
+
+
+  .NavLinkLogin{
+    border-radius: 50px;
+    padding: 10px;
+    /* border: solid 1px var( --secondary-color); */
+    text-align: center;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+  }
+  .NavLinkLogin:hover{
+    border-radius: 50px;
+    padding: 10px;
+    border: solid 1px var( --secondary-color);
+    text-align: center;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: #000000;
+    font-size: large;
+  }
+
+  .NavLinkLogout{
+    border-radius: 50px;
+    padding: 10px;
+    /* border: solid 1px var( ); */
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: #00193a;
+    font-size: large;
+  }
+  .NavLinkLogout:hover{
+    border-radius: 50px;
+    padding: 10px;
+    border: solid 1px var( --secondary-color);
+    text-align: center;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: white;
+    font-size: large;
+  }
+
+
+
+  .NavLink{
+    border-radius: 50px;
+    padding: 10px;
+    /* border: solid 1px var( --secondary-color); */
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: #00193a;
+    font-size: large;
+  }
+  .NavLink:hover{
+    border-radius: 50px;
+    display: inline;
+    padding: 10px;
+    border: solid 1px var( --secondary-color);
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: large;
+  }
+
+  .NavUser{
+    padding: 20px;
+    background:transparent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .Navbar>img{
+    width: 200px;
+    padding: 0px;
+    background-color: transparent;
+    justify-self: center;
+  }
+
+  .BurgerMenuHide{
+    background:rgba(0,25,58,1);
+    display:none;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: -180px;
+    transition: 0.5s;
+  }
+
+  .burgerMenuicon{
+    display: none;
+  }
+
+
+  .MoblieLogo{
+    display:none;
+  }
+
+  .BurgerMenu{
+   display: none; 
+  }
+/* Mobile navbar */
+ 
+
+
+  
+/* Login page */
+.Login-Page{
+  color: #f0f0f0;
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translateX(-50%);
+  background-color:#FF204E;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-radius:10px;
+}
+.Login-Page h1{
+  border-radius: 10px;
+  margin-bottom:10px;
+}
+.Login-Container{
+  border-radius: 10px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+  gap: 10px;
+}
+.Login-Container > div{
+  color:#f0f0f0;
+  background-color:#f0f0f0;
+display: grid;
+gap: 10px;
+grid-template-columns: 1fr 3fr;
+}
+
+.Login-Container > div > input{
+  border: solid;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  padding: 5px;
+}
+
+.Login-Container > div > label{
+  background-color:white;
+  color: #000000;
+}
+
+.Login-Container > p{
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+.Login-Container > button{
+  background-color: #00193a;
+  color: #ffffff;
+  padding: 10px;
+  border: solid;
+  border-radius: 50px;
+}
+
+
+
+
+
+
+/* Home Page */
+
+.HomePageContainer{
+  color: white;
+  padding: 15px;
+  display: grid;
+  grid-template-columns:80% 20%;
+  padding-top: 100px;
+  gap: 20px;
+}
+
+.HomePageContent{
+  text-align: justify;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  /* border: solid 3px var(--primary-color); */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.HomePageContent > li{
+  padding: 10px;
+  border-radius: 15px;
+  list-style-type:none;
+  border:solid 2px var(--primary-color);
+  
+}
+.HomePageContent > li:hover{
+  padding: 10px;
+  border-radius: 15px;
+  list-style-type:none;
+  border:solid 2px var(--primary-color);
+
+}
+.HomePageContent > li >img{
+  position: relative;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.HomePageContent > li >button{
+  border-radius: 50px;
+  position: relative;
+  left: 40%;
+  font-size: medium;
+  color: white;
+  transform: translateX(-40%);
+  padding: 10px 15px 10px 15px;
+  background-color: var(--primary-color);
+  border: solid 1px var(--primary-color);
+}
+.HomePageContent > li >button:hover{
+  background: var(--secondary-color);
+  border: solid 1px var(--text-color);
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+  color: var(--text-color);
+}
+
+.HomePageContent > li > div{
+  display: inline;
+  position: relative;
+  left:40%;
+  transform: translateX(-40%);
+
+
+}
+.HomePageContent > li > div >button{
+  border-radius: 50px;
+  font-size: medium;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border: solid 1px var(--primary-color);
+  background-color: var(--primary-color);
+}
+.HomePageContent > li > div >button:hover{
+  background: var(--secondary-color);
+  border: solid 1px var(--text-color);
+  color: var(--text-color);
+}
+
+.Loglink{
+  border-radius: 50px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+}
+.HomePageContent > li > div >button:hover .Loglink{
+  background: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.TopRead{
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.TopRead > ol{
+  border: solid 1px var(--primary-color);
+  border-radius: 10px;
+}
+.TopRead >ol> button{
+  color: white;
+  font-size: medium;
+  border:none;
+  background-color: transparent;
+}
+.TopRead >ol> img{
+  display: none;
+  border-radius: 10px;
+width: 100%;
+height: 150px;
+position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 10s;
+
+}
+.TopRead > ol:hover > img{
+  display:inline;
+  transition: 10s;
+}
+.TopRead > ol:hover{
+  border: solid 2px var(--primary-color);
+  border-radius: 10px;
+  padding: 5px;
+  display:inline;
+  
+}
+
+/* SinglePage */
+
+.SinglePage{
+  text-align: justify;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 15%;
+  width: 80%;
+  margin: 10px 20px;
+  border-radius: 10px;
+  color: var(--text-color);
+  border:solid 2px var(--primary-color);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.SinglePage > h1{
+  border: solid;
+  border-top:0px;
+  border-right:0px;
+  border-left:0px;
+  border-color: var(--primary-color);
+}
+
+.SinglePage >img{
+  position: relative;
+  left:50%;
+  width: 90%;
+  transform: translateX(-50%);
+}
+.SinglePage > p:first-of-type{
+  text-align: justify;
+  text-indent: 100px;
+}
+.SinglePage > p{
+  text-align: justify;
+}
+
+
+
+/* Backbutton */
+
+.BackButton{
+  position:fixed;
+    top: 11%;
+    left:2%;
+    z-index: 80;
+  background: var(--primary-color);
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+  border:none;
+}
+.BackButton:hover{
+  
+  position:fixed;
+    top: 11%;
+    left:2%;
+    z-index: 80;
+  background: var(--secondary-color);
+  border: solid 1px var(--text-color);
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+  color: var(--text-color);
+ 
+}
+
+
+
+/* Save Page */
+
+.SavePage{
+  text-align: justify;
+  color: var(--text-color);
+  margin: 8%;
+}
+/* .SavePage > {
+  text-align: justify;
+  color: var(--text-color);
+  margin: 8%;
+} */
+
+.SavePage > ul {
+  display: flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.SavePage > ul > li {
+  display:  flex;
+  flex-direction:column;
+  gap:10px;
+  list-style-type:none;
+  padding: 5%;
+  border-radius: 10px;
+  border:solid 2px var(--primary-color) ;
+}
+
+
+.SavePage > ul > li > h1{
+  border: solid 2px var(--primary-color);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.SavePage > ul > li > img{
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.SavePage > ul > li > div{
+align-self: center;
+}
+
+
+.SavePage > ul > li > div > button{
+  margin: 10px;
+  background: var(--primary-color);
+padding: 10px 20px 10px 20px;
+border-radius: 50px;
+border:none;
+  width:fit-content;
+
+}
+.NotLogin {
+  text-align: center;
+}
+.NotLogin > h1{
+  display: inline;
+}
+.NotLoginButton{
+  
+  display: inline;
+}
+
+
+
+
+/* /Back button */
+.BackButton2{
+  position:fixed;
+  top: 11%;
+  left:2%;
+  z-index: 80;
+background: var(--primary-color);
+padding: 10px 20px 10px 20px;
+border-radius: 50px;
+border:none;
+}
+
+.BackButton2:hover{
+
+  position:fixed;
+  top: 11%;
+  left:2%;
+  z-index: 80;
+background: var(--secondary-color);
+border: solid 1px var(--text-color);
+padding: 10px 20px 10px 20px;
+border-radius: 50px;
+color: var(--text-color);
+}
+
+
+
+
+/* AboutUs */
+
+.AboutUsPage{
+      margin: 4%;
+      border: solid 2px var(--primary-color);
+      position: absolute;
+      top:12%;
+      color: var(--text-color);
+}
+.AboutUsPage> div{
+      margin: 50px;
+   
+      position: relative;
+      top:10%;
+}
+.AboutUsPage> div > h1{
+  display:inline-block;
+  border: solid 2px var(--primary-color);
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Footer */
+
+.Footer{
+  padding: 50px;
+  display: block;
+  color: var(--text-color);
+  background-color: var(--third-color);
+  text-align: center;
+  
+}
+.Footer > h3{
+  
+  color: var(--text-color);
+  background:var(--third-color);
+
+}
+
+.FooterOtherpage >h3{
+  color: var(--text-color);
+  background:var(--third-color);
+}
+.FooterOtherpage{
+  padding: 50px;
+  color: var(--text-color);
+  background-color: var(--third-color);
+  text-align: center;
+  position: absolute;
+  width: 94%;
+  bottom: 0px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+
+
+  /* Login */
+
+  .Login-Page{
+    color: #f0f0f0;
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translateX(-50%);
+    background-color:#FF204E;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius:10px;
+  }
+  
+  .Navbar{
+    display: none;
+  }
+  
+  .MoblieLogo{
+    z-index: 100;
+    display:block;
+    position: fixed;
+     /* background:linear-gradient(0deg, rgba(0,25,58,1) 0%, rgba(255,32,78,1) 80%); */
+     background-color: var(--primary-color);
+    width: 100%;
+    padding: 5px;
+  }
+
+  .MoblieLogo > img{
+    position: relative;
+    left: 48%;
+    background-color: var(--primary-color);
+    transform: translate(-53%);
+    width: 200px;
+  }
+
+  .burgerMenuicon{
+    background-color: var(--primary-color);
+    z-index: 100;
+    width: 50px;
+    display: inline;
+    position: fixed;
+    top:12px;
+    left:5px;
+  }
+
+  .BurgerMenu{
+    z-index: 99;
+    background:rgba(0,25,58,1);
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: 80px;
+    transition: 0.5s;
+  }
+  .BurgerMenuHide{
+    background:rgba(0,25,58,1);
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    top: -180px;
+    transition: 0.5s;
+  }
+
+  .NavLink{
+   margin: 5px;
+    border-radius:5px;
+    padding: 10px;
+    /* border: solid 1px var(--primary-color); */
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+  }
+
+  .NavLink:hover{
+    border-radius: 50px;
+    display: inline;
+    padding: 10px;
+    border: solid 1px var( --secondary-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: large;
+  }
+  .Navbutton{
+    margin: 5px;
+    border-radius:5px;
+    padding: 10px;
+    /* border: solid 1px var(--primary-color); */
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: large;
+  }
+
+  .Navbutton:hover{
+    border-radius: 50px;
+    display: inline;
+    padding: 10px;
+    border: solid 1px var( --secondary-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: large;
+  }
+
+
+
+  /* Homepage */
+  .HomePageContainer{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    padding-top: 100px;
+    gap: 20px;
+  }
+
+  .HomePageContent >  li > button{
+    display: inline;
+    position: relative;
+    left:10%;
+    transform: translateX(- 10%);
+  }
+  /* .HomePageContent >  li > div > button{
+    display: inline;
+    position: relative;
+    right:-25%;
+    
+  } */
+
+   .HomePageContent > li > div {
+      position: absolute;
+      border-radius: 10px;
+  
+      display: inline;
+      background-color: var(--secondary-color);
+  }
+
+
+
+  .Loglink{
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+
+  /* singlePage */
+
+  .SinglePage{
+    width: 90%;
+    position: absolute;
+    top: 15%;
+    margin: 10px 10px;
+    border-radius: 10px;
+    color: var(--text-color);
+    border:solid 2px var(--primary-color);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .SinglePage >img{
+    position: relative;
+    width: 90%;
+    left:50%;
+    transform: translateX(-50%);
+  }
+
+
+
+
+  /* .BackButton */
+
+
+  .BackButton2{
+    position:fixed;
+    top: 11%;
+    left:5%;
+    z-index: 80;
+    background: var(--primary-color);
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    border:none;
+  }
+
+  .BackButton2:hover{
+    position:fixed;
+    top: 11%;
+    left:5%;
+    z-index: 80;
+  background: var(--primary-color);
+  padding: 10px 20px 10px 20px;
+  border-radius: 50px;
+  border:none;
+  }
+  
+ /* Footer */
+ .FooterOtherpage{
+  padding: 50px;
+  color: var(--text-color);
+  background-color: var(--third-color);
+  text-align: center;
+  position: absolute;
+  display: block;
+  width: 82%;
+  bottom: -100px;
+}
+/* .FooterOtherpage{
+  padding: 50px;
+  color: var(--text-color);
+  background-color: var(--third-color);
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+} */
+
+}
+
