@@ -6,7 +6,7 @@ const Topread = ({blogstatusonff})=>{
     const [blog,setblog]= useState([]);
     const [pageswitch,setPageSwitch] = useState({onoff:true,BlogId:""})
     useEffect(()=>{
-        axios.get('http://localhost:8080/blog').then((res)=>{
+        axios.get('https://tech-tonic.onrender.com/blog').then((res)=>{
             const Allblog = res.data.sort((a,b)=>{return (a.Readers - b.Readers)});
             console.log("after")
             console.log(Allblog);
