@@ -91,11 +91,11 @@ const Logoutclassfn = ()=>{
         onClick={()=>{BurgerMenu() }}/>
 
             <div className={MobileMenu}>
-            <Link className="NavLink" to='/'>Home</Link>
-         <Link  className="NavLink" to='/Saved'>Saved</Link>
-   {cookie.access_token? (<Link  className="Navbutton" onClick={handlelogout}>logout</Link>) :(<div className="NavUser"><Link  className="NavLink" to='/register'>Register</Link>
-        <Link className="NavLinkLogin" to='/login'>Login</Link></div>)}
-        <Link  className="NavLink" to='/AboutUs'>About Us</Link>
+            <Link className="NavLink" to='/' style={useidentify.Home}>Home</Link>
+         <Link  className="NavLink" to='/Saved' style={useidentify.Saved}>Saved</Link>
+   {cookie.access_token? (<Link  className="Navbutton" onClick={handlelogout}>logout</Link>) :(<div className="NavUser"><Link  className="NavLink" to='/register' style={useidentify.Register}>Register</Link>
+        <Link className="NavLinkLogin" to='/login' style={useidentify.Login}>Login</Link></div>)}
+        <Link  className="NavLink" to='/AboutUs' style={useidentify.AboutUs}>About Us</Link>
             </div>
 
         </>
