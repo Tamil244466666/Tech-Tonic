@@ -74,8 +74,8 @@ const Logoutclassfn = ()=>{
         <>
         <div className={Logout}>
             <img src={Logo} alt="logo" />
-         <Link className="NavLink" to='/' style={useidentify.Home}>Home</Link>
-         <Link  className="NavLink" to='/Saved' style={useidentify.Saved}>Saved</Link>
+         <Link className="NavLink" to='https://tech-tonic-frontend.onrender.com/' style={useidentify.Home}>Home</Link>
+         <Link  className="NavLink" to='https://tech-tonic-frontend.onrender.com//Saved' style={useidentify.Saved}>Saved</Link>
   
         <Link  className="NavLink" to='/AboutUs' style={useidentify.AboutUs}>About Us</Link>
         {cookie.access_token? (<Link className="NavLinkLogout" onClick={handlelogout}>Logout</Link>):(<div className="NavUser"><Link  className="NavLink" to='/register' style={useidentify.Register}>Register</Link>
