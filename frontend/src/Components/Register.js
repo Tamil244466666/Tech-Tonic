@@ -19,7 +19,7 @@ const Register = ()=>{
   const submitHandler = async(event)=>{
     try{
     event.preventDefault()
-    await axios.post('http://localhost:8080/user/register',{userData})
+    await axios.post('https://tech-tonic.onrender.com/user/register',{userData})
     .then((responce)=>{
 
         
