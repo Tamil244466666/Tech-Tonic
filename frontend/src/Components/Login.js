@@ -15,7 +15,7 @@ const Login = ()=>{
 
    const submitHandler = async(event)=>{
     event.preventDefault();
-    await axios.post('http://localhost:8080/user/login',{loginData})
+    await axios.post('https://tech-tonic.onrender.com/user/login',{loginData})
     .then((res)=>{
         if(res.data.message === "successfully logged in"){
         setStatus(res.data);
