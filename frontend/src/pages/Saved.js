@@ -22,7 +22,7 @@ const Saved = ()=>{
         //     console.log(err.massage)
         // })
 
-        axios.get(`http://localhost:8080/user/${_id}`)
+        axios.get(`https://tech-tonic.onrender.com/user/${_id}`)
         .then((res)=>{
            setUser({...res.data});
            console.log(res.data)
@@ -30,7 +30,7 @@ const Saved = ()=>{
            console.log(err)
        })
     
-        axios.get('http://localhost:8080/blog').then((res)=>{
+        axios.get('https://tech-tonic.onrender.com/blog').then((res)=>{
             setSavedBlog([...res.data].reverse());
             console.log("after")
             console.log(res.data);
@@ -43,7 +43,7 @@ const Saved = ()=>{
 
 
     const unSavefn = (BlogId)=>{
-        axios.put('http://localhost:8080/blog/unsave',{_id,BlogId})
+        axios.put('https://tech-tonic.onrender.com/blog/unsave',{_id,BlogId})
        .then((res)=>{
            console.log('unsaved')
        }).catch((err)=>{
