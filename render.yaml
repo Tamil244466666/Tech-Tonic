@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: tech-tonic-frontend
+    name: frontend
     env: static
     buildCommand: npm run build
     publish: build
