@@ -1,12 +1,14 @@
 import express from "express";
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 import { userSchema } from "./src/Models/userSchema.js";
 import {userRouter} from './src/Routes/userRouter.js';
 import cors from 'cors';
 import { BlogRouter } from "./src/Routes/BlogRouter.js";
 
-const app = express()
-const PORT = 8080;
+const app = express();
+dotenv.config();
+const PORT = process.env.PORT || 8080;
 app.use(cors())
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
