@@ -20,7 +20,7 @@ const SaveButton = ({connectbutton})=>{
     }
 
     const unSavefn = (BlogId)=>{
-        axios.put('http://localhost:8080/blog/unsave',{_id,BlogId})
+        axios.put('https://tech-tonic.onrender.com/blog/unsave',{_id,BlogId})
        .then((res)=>{
            console.log('unsaved')
        }).catch((err)=>{
