@@ -708,10 +708,6 @@ color: var(--text-color);
     z-index: 80;
     transform: translateX(- 10%);
   }
-  .HomePageContent >  li > div > button{
-    /* display: inline-block;
-    position:relative; */
-    
 
   }
 
