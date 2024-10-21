@@ -29,7 +29,7 @@ const Home =()=>{
         }
         checkcookie();
 
-        axios.get('http://localhost:8080/blog')
+        axios.get('https://tech-tonic.onrender.com/blog')
         .then((res)=>{
             setBlog(res.data.reverse());
          
@@ -41,7 +41,7 @@ const Home =()=>{
 
         function userfn(){
         if(_id){
-          axios.get(`http://localhost:8080/user/${_id}`)
+          axios.get(`https://tech-tonic.onrender.com/user/${_id}`)
          .then((res)=>{
             setUser({...res.data});
         }).catch((err)=>{
@@ -65,7 +65,7 @@ const Home =()=>{
 
 
     const Savefn = (BlogId)=>{
-         axios.put('http://localhost:8080/blog',{_id,BlogId})
+         axios.put('https://tech-tonic.onrender.com/blog',{_id,BlogId})
         .then((res)=>{
             console.log('saved')
         }).catch((err)=>{
@@ -75,7 +75,7 @@ const Home =()=>{
    
     const readbuttonfn =async(id)=>{
         setBlogStatus({onoff:false,BlogId:id});
-        await axios.put('http://localhost:8080/blog/popularreading',{userID:'670e1b426c1eb970b58827f8',blogID:id})
+        await axios.put('https://tech-tonic.onrender.com/popularreading',{userID:'670e1b426c1eb970b58827f8',blogID:id})
         .then((res)=>{
             console.log(res.data);
             console.log("record the reader");
