@@ -7,7 +7,7 @@ const SingleBlog = (prop)=>{
     const [blog,setBlog] = useState({})
 
     useEffect(()=>{
-        axios.get(`http://localhost:8080/blog/${prop.BlogId}`).then((res)=>{
+        axios.get(`https://tech-tonic.onrender.com/blog/${prop.BlogId}`).then((res)=>{
             setBlog(res.data);
             console.log(blog)
         }).catch((err)=>{
