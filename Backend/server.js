@@ -6,6 +6,7 @@ import cors from 'cors';
 import { BlogRouter } from "./src/Routes/BlogRouter.js";
 
 const app = express()
+const PORT = 8080;
 app.use(cors())
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
@@ -15,7 +16,7 @@ app.use('/blog',BlogRouter);
 mongoose.connect("mongodb+srv://tamilkumaran021:mHMcdfDZSXY6D3LV@techtoniccluster.sn1b6.mongodb.net/TechTonicCluster?retryWrites=true&w=majority&appName=TechTonicCluster")
 .then(()=>{
     console.log('DB is connected');
-    app.listen(8080,()=>{
+    app.listen(PORT,()=>{
         console.log("server is online");
     })
 })
