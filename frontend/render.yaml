@@ -1,10 +1,10 @@
-services:
-  - type: web
-    name: tech-tonic-frontend
-    env: static
-    buildCommand: npm run build
-    publish: build
-    rewrites:
-      - source: /.*
-        destination: /index.html
-        status: 200
+# services:
+#   - type: web
+#     name: tech-tonic-frontend
+#     env: static
+#     buildCommand: npm run build
+#     publish: build
+#     rewrites:
+#       - source: /.*
+#         destination: /index.html
+#         status: 200
