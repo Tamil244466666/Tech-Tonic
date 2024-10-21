@@ -707,12 +707,12 @@ color: var(--text-color);
     left:10%;
     transform: translateX(- 10%);
   }
-  /* .HomePageContent >  li > div > button{
+  .HomePageContent >  li > div > button{
     display: inline;
     position: relative;
-    right:-25%;
+    right:-35%;
     
-  } */
+  }
 
    .HomePageContent > li > div {
       position: absolute;
