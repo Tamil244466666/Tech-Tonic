@@ -5,6 +5,7 @@ import { userSchema } from "./src/Models/userSchema.js";
 import {userRouter} from './src/Routes/userRouter.js';
 import cors from 'cors';
 import { BlogRouter } from "./src/Routes/BlogRouter.js";
+import axios from 'axios';
 
 
 const url = 'https://tech-tonic-frontend.onrender.com/'; // Replace with your Render URL
